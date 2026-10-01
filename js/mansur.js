@@ -63,6 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
   bubbleWhatsUp?.addEventListener('click', () => triggerBubble(bubbleWhatsUp, 520, 920));
   bubbleBratim?.addEventListener('click', () => triggerBubble(bubbleBratim, 400, 780));
 
+  const contactBtn = document.getElementById('contactBtn');
+  contactBtn?.addEventListener('click', () => {
+    playPopSound(520, 960);
+  });
+
   // ── Parallax Smooth Follow on Mouse Move (Crisp 2D, No Blur) ──
   window.addEventListener('mousemove', (e) => {
     if (!mansurImg || window.innerWidth <= 860) return;
